@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bark & Blade — The Ultimate Wood Carving Experience</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Clean sans-serif body text */
+            color: #333333; /* Deep Charcoal */
+            background-color: #EFEBE9; /* Soft Bark Beige */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif; /* Serif elegance for headings */
+            color: #333333; /* Deep Charcoal */
+        }
+        /* Custom scrollbar for a more refined look */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #EFEBE9; /* Soft Bark Beige */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #795548; /* Timber Brown */
+            border-radius: 10px;
+            border: 3px solid #EFEBE9;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4CAF50; /* Forest Green */
+        }
+
+        /* Custom hover effects for buttons/cards */
+        .btn-hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn-hover-effect:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card-hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .wood-grain-bg {
+            background-image: url('p1.webp'); /* Placeholder for wood grain */
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: multiply;
+            background-color: rgba(121, 85, 72, 0.7); /* Timber Brown with transparency */
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed text-lg">
+    <!-- Header -->
+    <header class="bg-white shadow-lg py-4 px-6 md:px-12 rounded-b-xl sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <a href="#" class="flex items-center space-x-3">
+                <img src="https://placehold.co/60x60/795548/EFEBE9?text=BB" alt="Bark & Blade Logo" class="rounded-full shadow-md">
+                <span class="text-3xl font-bold text-795548">Bark & Blade</span>
+            </a>
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex flex-wrap justify-center space-x-6 md:space-x-8 text-lg font-medium">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto my-8 p-4 md:p-8 bg-white rounded-xl shadow-xl">
+
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-cover bg-center h-[600px] md:h-[700px] wood-grain-bg rounded-xl overflow-hidden flex items-center justify-center text-center p-6 mb-16">
+            <img src="p1.webp" alt="Hero Image: Close-up of carved wood with tools in action" class="absolute inset-0 w-full h-full object-cover opacity-75">
+            <div class="relative z-10 bg-black bg-opacity-50 p-8 rounded-xl max-w-4xl">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">Crafted by Hand. Inspired by Nature.</h1>
+                <p class="text-xl md:text-2xl text-white mb-10">Bark & Blade is where timeless woodcraft meets modern design. A space for beginners and artisans alike to master the art of carving, connect with a global community, and celebrate the natural beauty of wood.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#craft-library" class="bg-795548 text-white px-8 py-4 rounded-full text-xl font-semibold hover:bg-4CAF50 transition duration-300 btn-hover-effect shadow-lg">Explore the Craft</a>
+                    <a href="#workshops" class="bg-4CAF50 text-white px-8 py-4 rounded-full text-xl font-semibold hover:bg-795548 transition duration-300 btn-hover-effect shadow-lg">Learn Whittling</a>
+                    <a href="#shop" class="bg-B0BEC5 text-333333 px-8 py-4 rounded-full text-xl font-semibold hover:bg-795548 hover:text-white transition duration-300 btn-hover-effect shadow-lg">Shop Essentials</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unified Brand Vision -->
+        <section class="mb-16 p-6 md:p-10 bg-EFEBE9 rounded-xl shadow-inner">
+            <h2 class="text-4xl font-bold text-795548 mb-8 text-center">Our Unified Brand Vision</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg mb-6">At Bark & Blade, we envision a world where the ancient art of wood carving flourishes, accessible to everyone from the curious beginner to the seasoned artisan. We are more than just a platform; we are a vibrant ecosystem dedicated to fostering creativity, skill development, and a deep appreciation for natural materials.</p>
+                    <p class="text-lg mb-6">Our mission is to bridge the gap between traditional craftsmanship and modern digital convenience. We provide unparalleled educational resources, a curated selection of tools, and a thriving global community, all designed to empower your journey from a raw piece of wood to a masterpiece.</p>
+                    <ul class="space-y-4 text-lg list-disc list-inside">
+                        <li class="text-333333"><span class="font-semibold text-795548">For Everyone:</span> Whether you're a hobbyist seeking a new creative outlet, a skilled carver refining your techniques, or a nature-inspired creator looking for sustainable practices, Bark & Blade is your dedicated space.</li>
+                        <li class="text-333333"><span class="font-semibold text-795548">Seamless Experience:</span> We meticulously combine rustic authenticity, reflecting the tactile joy of working with wood, with a sleek, intuitive, and user-friendly web experience. Our platform is designed to be as smooth and satisfying as a perfectly carved surface.</li>
+                        <li class="text-333333"><span class="font-semibold text-795548">Empowering Growth:</span> We are committed to empowering craftsmanship, promoting sustainable practices, and fostering a culture of lifelong learning. Every interaction with Bark & Blade is an opportunity to grow, create, and connect.</li>
+                    </ul>
+                </div>
+                <div class="flex justify-center">
+                    <img src="p2.avif" alt="Brand Vision" class="rounded-xl shadow-lg card-hover-effect">
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Identity Snapshot -->
+        <section class="mb-16 p-6 md:p-10 bg-white rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-795548 mb-8 text-center">Our Brand Identity: A Snapshot</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-3xl font-semibold text-333333 mb-4">Brand Name: Bark & Blade</h3>
+                    <p class="text-lg mb-6">The name "Bark & Blade" encapsulates the essence of our craft: the raw, natural material (bark, representing the wood itself) and the precision tool (blade, representing skill and artistry). It signifies the transformation that occurs when human ingenuity meets nature's bounty.</p>
+
+                    <h3 class="text-3xl font-semibold text-333333 mb-4">Taglines:</h3>
+                    <ul class="space-y-3 text-lg list-disc list-inside mb-6">
+                        <li><span class="font-medium text-795548">"Crafted by Hand. Inspired by Nature."</span> - Our primary tagline, highlighting the human element and the natural inspiration.</li>
+                        <li><span class="font-medium text-795548">"From Grain to Greatness."</span> - Emphasizes the journey of skill development and the potential within every piece of wood.</li>
+                        <li><span class="font-medium text-795548">"Where Wood, Skill, and Artistry Unite."</span> - A concise summary of our core pillars and community focus.</li>
+                    </ul>
+
+                    <h3 class="text-3xl font-semibold text-333333 mb-4">Vibe: Modern Meets Earthy</h3>
+                    <p class="text-lg mb-6">Our brand vibe is a harmonious blend of contemporary aesthetics and the timeless appeal of the natural world. We embrace clean lines, minimalist design, and intuitive interfaces, while simultaneously celebrating the organic textures, warmth, and authenticity of wood.</p>
+                    <ul class="space-y-3 text-lg list-disc list-inside">
+                        <li><span class="font-medium text-795548">Aesthetic Balance:</span> We strike a perfect balance between modern sleekness and earthy authenticity, creating an inviting and inspiring atmosphere.</li>
+                        <li><span class="font-medium text-795548">Broad Appeal:</span> Our vibe resonates with a diverse audience, from casual hobbyists exploring a new craft to professional artisans seeking advanced techniques, and eco-conscious makers prioritizing sustainable practices.</li>
+                        <li><span class="font-medium text-795548">Deep Respect:</span> At our core, we foster a deep respect for the materials we work with, the rich heritage of wood carving, and the vibrant community that brings it to life.</li>
+                    </ul>
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="p3.avif" alt="Brand Identity" class="rounded-xl shadow-lg card-hover-effect">
+                </div>
+            </div>
+        </section>
+
+        <!-- Complete Visual System -->
+        <section class="mb-16 p-6 md:p-10 bg-EFEBE9 rounded-xl shadow-inner">
+            <h2 class="text-4xl font-bold text-795548 mb-8 text-center">Our Complete Visual System</h2>
+            <p class="text-lg mb-8 text-center max-w-3xl mx-auto">Our visual identity is carefully crafted to reflect our brand's essence: a fusion of natural beauty, precise craftsmanship, and modern elegance. Every element, from our color palette to our iconography, is designed to inspire and guide your creative journey.</p>
+
+            <h3 class="text-3xl font-semibold text-333333 mb-6">Color Palette:</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+                <div class="p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <div class="w-full h-24 bg-795548 rounded-lg mb-4"></div>
+                    <p class="font-semibold text-xl">Timber Brown</p>
+                    <p class="text-lg">#795548</p>
+                    <p class="text-sm text-gray-600">Usage: Buttons, accents, borders, evoking natural wood.</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <div class="w-full h-24 bg-4CAF50 rounded-lg mb-4"></div>
+                    <p class="font-semibold text-xl">Forest Green</p>
+                    <p class="text-lg">#4CAF50</p>
+                    <p class="text-sm text-gray-600">Usage: Sustainability highlights, icons, representing growth and nature.</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <div class="w-full h-24 bg-EFEBE9 rounded-lg mb-4"></div>
+                    <p class="font-semibold text-xl">Soft Bark Beige</p>
+                    <p class="text-lg">#EFEBE9</p>
+                    <p class="text-sm text-gray-600">Usage: Backgrounds, spacious layouts, providing a clean canvas.</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <div class="w-full h-24 bg-333333 rounded-lg mb-4"></div>
+                    <p class="font-semibold text-xl">Deep Charcoal</p>
+                    <p class="text-lg">#333333</p>
+                    <p class="text-sm text-gray-600">Usage: Text, structural elements, providing strong contrast.</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <div class="w-full h-24 bg-B0BEC5 rounded-lg mb-4"></div>
+                    <p class="font-semibold text-xl">Blade Silver</p>
+                    <p class="text-lg">#B0BEC5</p>
+                    <p class="text-sm text-gray-600">Usage: Subtle accents, tool details, representing precision and sharpness.</p>
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-semibold text-333333 mb-6">Iconography & Visual Motifs:</h3>
+            <div class="grid md:grid-cols-2 gap-8 mb-10">
+                <div>
+                    <p class="text-lg mb-4">Our visual language extends beyond colors. We incorporate rich woodgrain patterns, subtle leaf motifs, and elegant hand-carved iconography throughout the site. These elements reinforce our connection to nature and the tactile beauty of the craft.</p>
+                    <ul class="space-y-3 text-lg list-disc list-inside">
+                        <li><span class="font-medium text-795548">Organic Textures:</span> Backgrounds and dividers often feature subtle woodgrain patterns, adding depth and warmth.</li>
+                        <li><span class="font-medium text-795548">Nature's Touch:</span> Icons for sustainability or educational sections might include stylized leaf or tree motifs.</li>
+                        <li><span class="font-medium text-795548">Crafted Details:</span> Hand-carved iconography for categories like "Tools" or "Patterns" provides an authentic, artisanal feel.</li>
+                    </ul>
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="p4.webp" alt="Woodgrain Patterns & Icons" class="rounded-xl shadow-lg card-hover-effect">
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-semibold text-333333 mb-6">Hover Animations & Typography:</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-lg mb-4">Interactive elements come alive with subtle hover animations. While complex effects like floating wood shavings or blade gleams are conceptual, we implement visual cues such as slight scaling, color changes, and subtle shadows to indicate interactivity and add a touch of magic.</p>
+                    <ul class="space-y-3 text-lg list-disc list-inside">
+                        <li><span class="font-medium text-795548">Dynamic Interaction:</span> Buttons and cards subtly lift or change color on hover, inviting engagement.</li>
+                        <li><span class="font-medium text-795548">Refined Transitions:</span> Smooth transitions ensure a polished and responsive user experience.</li>
+                    </ul>
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="p5.webp" alt="Typography & Animations" class="rounded-xl shadow-lg card-hover-effect">
+                </div>
+                <div class="md:col-span-2 mt-8">
+                    <h4 class="text-2xl font-semibold text-333333 mb-4">Typography Balance:</h4>
+                    <p class="text-lg mb-4">Our typography is carefully balanced to ensure both elegance and readability. Headings utilize a classic serif font, imparting a sense of heritage and artistry, while body text employs a clean, modern sans-serif for optimal legibility across all devices.</p>
+                    <p class="text-lg font-playfair-display text-795548">This is an example of our Serif elegance for headings.</p>
+                    <p class="text-lg font-inter text-333333">This is an example of our clean sans-serif body text, designed for clarity and ease of reading.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Merged Full Website Structure -->
+        <section class="mb-16 p-6 md:p-10 bg-white rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-795548 mb-8 text-center">Our Comprehensive Website Structure</h2>
+            <p class="text-lg mb-8 text-center max-w-3xl mx-auto">Bark & Blade is designed with a logical and intuitive structure, ensuring a seamless journey for every visitor. From the moment you land on our homepage to exploring advanced techniques, every section is thoughtfully organized to enhance your wood carving experience.</p>
+
+            <!-- Homepage -->
+            <div class="mb-12 p-6 bg-EFEBE9 rounded-xl shadow-md card-hover-effect">
+                <h3 class="text-3xl font-semibold text-333333 mb-4">🏡 Homepage: Your Gateway to Woodcraft</h3>
+                <p class="text-lg mb-4">The Bark & Blade homepage serves as a dynamic introduction to our world. It's designed to immediately capture attention and guide visitors to their areas of interest, whether they are just starting out or looking for advanced resources.</p>
+                <ul class="space-y-3 text-lg list-disc list-inside mb-4">
+                    <li><span class="font-medium text-795548">Hero Section:</span> Dominated by rich close-ups of carved wood, tools in action, and the delicate dance of wood shavings falling. This visual feast is overlaid with our inspiring tagline: "Crafted by Hand. Inspired by Nature."</li>
+                    <li><span class="font-medium text-795548">Prominent CTAs:</span> Clear and inviting Call-to-Action buttons like "Explore the Craft," "Learn Whittling," and "Shop Essentials" ensure visitors can quickly navigate to key sections.</li>
+                    <li><span class="font-medium text-795548">Dynamic Featured Sections:</span>
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Rerun Your Skills:</span> A dedicated area encouraging continuous practice and improvement, featuring quick tips and exercises.</li>
+                            <li><span class="font-normal text-333333">Artisan Spotlights:</span> Showcasing the work and stories of master carvers, providing inspiration and insight.</li>
+                            <li><span class="font-normal text-333333">Community Creations Feed:</span> A live feed of user-submitted projects, fostering a sense of shared accomplishment and creativity.</li>
+                            <li><span class="font-normal text-333333">Product & Tool Highlights:</span> A rotating display of essential tools, new arrivals, and popular kits from The Artisan Shop.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="p6.avif" alt="Homepage Mockup" class="rounded-xl shadow-lg mt-6 card-hover-effect">
+            </div>
+
+            <!-- Educational Deep Dive: The Craft Library -->
+            <div class="mb-12 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                <h3 class="text-3xl font-semibold text-333333 mb-4">🌲 Educational Deep Dive: The Craft Library</h3>
+                <p class="text-lg mb-4">The Craft Library is the definitive resource for all things wood carving. It's meticulously curated to provide in-depth knowledge on materials, tools, and techniques, catering to every skill level.</p>
+                <ul class="space-y-3 text-lg list-disc list-inside mb-4">
+                    <li><span class="font-medium text-795548">Wood Species Explorer:</span> An interactive guide detailing various wood types. Each entry includes:
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Grain Patterns:</span> Visual examples and descriptions.</li>
+                            <li><span class="font-normal text-333333">Carving Difficulty:</span> Ratings and tips for working with each wood.</li>
+                            <li><span class="font-normal text-333333">Ideal Uses:</span> Suggestions for projects best suited for the wood.</li>
+                            <li><span class="font-normal text-333333">Featured Woods:</span> Comprehensive profiles on Basswood (ideal for beginners), Cherry (known for its rich color), Walnut (for intricate details), as well as fascinating insights into Driftwood and Reclaimed Woods for sustainable carving.</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-medium text-795548">Tool Mastery Hub:</span> Your go-to source for understanding and maintaining your carving instruments.
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Knife Types:</span> Detailed explanations of various carving knives, gouges, and chisels.</li>
+                            <li><span class="font-normal text-333333">Blade Care Tutorials:</span> Essential guides on cleaning, oiling, and storing your tools.</li>
+                            <li><span class="font-normal text-333333">Sharpening Guides:</span> Step-by-step instructions for achieving razor-sharp edges, including different grit stones and stropping techniques.</li>
+                            <li><span class="font-normal text-333333">Blade Anatomy 101:</span> Interactive visuals breaking down the parts of a carving blade and their functions.</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-medium text-795548">Pattern Download Center:</span> A treasure trove of free, downloadable carving templates.
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Diverse Categories:</span> Patterns for animals, intricate ornaments, functional utensils, and abstract designs.</li>
+                            <li><span class="font-normal text-333333">Skill Level Filters:</span> Easily filter patterns by Beginner, Intermediate, or Artisan difficulty, ensuring you find projects perfectly suited to your current abilities.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="p7.avif" alt="Craft Library Mockup" class="rounded-xl shadow-lg mt-6 card-hover-effect">
+            </div>
+
+            <!-- Workshops & Tutorials -->
+            <div class="mb-12 p-6 bg-EFEBE9 rounded-xl shadow-md card-hover-effect">
+                <h3 class="text-3xl font-semibold text-333333 mb-4">🎥 Workshops & Tutorials: Learn from the Best</h3>
+                <p class="text-lg mb-4">Our Workshops & Tutorials section is designed to provide hands-on learning experiences, bringing expert instruction directly to you through high-quality video content and interactive live sessions.</p>
+                <ul class="space-y-3 text-lg list-disc list-inside mb-4">
+                    <li><span class="font-medium text-795548">Comprehensive Video Series:</span>
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Fundamentals:</span> Detailed videos on essential knife grips, crucial safety protocols, and core carving fundamentals.</li>
+                            <li><span class="font-normal text-333333">Project Builds:</span> Step-by-step guides for complete project builds, from simple spoons to complex figurines.</li>
+                            <li><span class="font-normal text-333333">Expert Demonstrations:</span> Advanced techniques and artistic approaches demonstrated by master carvers.</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-medium text-795548">Live Virtual Events:</span> Participate in real-time carving sessions.
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Guest Artisans:</span> Learn directly from renowned carvers who share their unique styles and secrets.</li>
+                            <li><span class="font-normal text-333333">Interactive Q&A:</span> Get your questions answered live, receiving personalized feedback and tips.</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-medium text-795548">"30 Days of Carving" Challenge:</span> A structured program designed to build consistent skill.
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Daily Mini-Projects:</span> Engage with bite-sized carving tasks that incrementally build your proficiency and confidence over a month.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="p8.avif" alt="Workshops Mockup" class="rounded-xl shadow-lg mt-6 card-hover-effect">
+            </div>
+
+            <!-- The Artisan Shop -->
+            <div class="mb-12 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                <h3 class="text-3xl font-semibold text-333333 mb-4">🛒 The Artisan Shop: Your Source for Quality Tools & Materials</h3>
+                <p class="text-lg mb-4">The Artisan Shop is your trusted destination for high-quality wood carving tools, ethically sourced materials, and exclusive Bark & Blade branded gear. We handpick every item to ensure it meets the standards of both beginners and professional artisans.</p>
+                <ul class="space-y-3 text-lg list-disc list-inside mb-4">
+                    <li><span class="font-medium text-795548">Handpicked Tools & Kits:</span>
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Beginner Whittling Sets:</span> Carefully assembled kits perfect for those just starting their carving journey.</li>
+                            <li><span class="font-normal text-333333">Precision Knives:</span> A wide selection of individual knives for specific carving needs, crafted for durability and sharpness.</li>
+                            <li><span class="font-normal text-333333">Sharpening Stones:</span> A range of grits and types to keep your blades in optimal condition.</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-medium text-795548">Specialty Woods for Sale:</span>
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Ethically Sourced Carving Blocks:</span> Sustainably harvested wood blocks, ensuring responsible forestry practices.</li>
+                            <li><span class="font-normal text-333333">Unique Wood Grain Pieces:</span> Special selections for those looking for distinctive patterns and character in their projects.</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-medium text-795548">Bark & Blade Branded Gear:</span>
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Carving Aprons & Safety Gloves:</span> Essential protective gear designed for comfort and safety.</li>
+                            <li><span class="font-normal text-333333">Tool Rolls:</span> Durable and convenient storage solutions for your carving tools.</li>
+                            <li><span class="font-normal text-333333">Eco-conscious Tote Bags & Shirts:</span> Stylish apparel and accessories that reflect your passion for woodcraft and sustainability.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="p9.webp" alt="Shop Mockup" class="rounded-xl shadow-lg mt-6 card-hover-effect">
+            </div>
+
+            <!-- Global Community Hub -->
+            <div class="mb-12 p-6 bg-EFEBE9 rounded-xl shadow-md card-hover-effect">
+                <h3 class="text-3xl font-semibold text-333333 mb-4">🏆 Global Community Hub: Connect, Share, Inspire</h3>
+                <p class="text-lg mb-4">The Bark & Blade Global Community Hub is the heart of our platform, a vibrant space where carvers from around the world can connect, share their work, gain inspiration, and grow together. It's built on the principles of mutual respect, encouragement, and shared passion.</p>
+                <ul class="space-y-3 text-lg list-disc list-inside mb-4">
+                    <li><span class="font-medium text-795548">My Workshop Dashboard:</span> Your personalized space to manage your carving journey.
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Save Projects:</span> Keep track of your ongoing and completed projects.</li>
+                            <li><span class="font-normal text-333333">Track Skills:</span> Monitor your progress and identify areas for improvement.</li>
+                            <li><span class="font-normal text-333333">Badge Achievements:</span> Earn badges for milestones and skill mastery, celebrating your accomplishments.</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-medium text-795548">Community Gallery:</span> A visual showcase of talent and creativity.
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Upload Creations:</span> Share your finished carvings with the community.</li>
+                            <li><span class="font-normal text-333333">Get Feedback:</span> Receive constructive criticism and encouragement from fellow carvers.</li>
+                            <li><span class="font-normal text-333333">Inspire Others:</span> Your work can motivate and guide aspiring artisans.</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-medium text-795548">Challenges & Contests:</span> Engage in friendly competition and push your boundaries.
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Monthly Themed Carving Competitions:</span> Test your skills against others with exciting new themes each month.</li>
+                            <li><span class="font-normal text-333333">"Blade & Burl Showcase":</span> Our premier global feature contest, recognizing exceptional artistry and innovation.</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-medium text-795548">Artisan Spotlights:</span> In-depth features on master carvers.
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Interviews & Showcases:</span> Learn about their journeys, techniques, and signature projects.</li>
+                            <li><span class="font-normal text-333333">Direct Learning:</span> Gain invaluable insights and inspiration directly from the masters of the craft.</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-medium text-795548">Forum & Local Meetups:</span> Connect beyond the screen.
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Discussion Boards:</span> Engage in lively conversations about tools, techniques, project inspiration, and problem-solving.</li>
+                            <li><span class="font-normal text-333333">Find Carving Groups Near You:</span> Discover local carving communities and organize in-person meetups.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Sustainability & Values -->
+            <div class="mb-12 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                <h3 class="text-3xl font-semibold text-333333 mb-4">💧 Sustainability & Values: Crafting a Better Future</h3>
+                <p class="text-lg mb-4">At Bark & Blade, our passion for wood carving is deeply intertwined with our commitment to environmental responsibility and ethical practices. We believe that true artistry respects both the material and the planet it comes from.</p>
+                <ul class="space-y-3 text-lg list-disc list-inside mb-4">
+                    <li><span class="font-medium text-795548">Ethical Wood Sourcing Commitments:</span> We partner only with suppliers who adhere to strict ethical and sustainable forestry practices, ensuring that the wood you carve is responsibly harvested. We prioritize certified sustainable wood and minimize our environmental footprint.</li>
+                    <li><span class="font-medium text-795548">Educational Campaigns on Reclaimed Wood Use:</span> We actively promote and educate our community on the beauty and benefits of using reclaimed, recycled, and repurposed wood for carving. This reduces waste and gives new life to forgotten materials.</li>
+                    <li><span class="font-medium text-795548">Nature-Inspired Product Development:</span> Our product lines are not only functional but also designed with a deep reverence for nature. We seek out eco-friendly packaging and materials wherever possible.</li>
+                    <li><span class="font-medium text-795548">"Nature to Nurture" Initiative:</span> A core part of our mission, this initiative supports reforestation projects and environmental conservation efforts globally. A portion of every purchase goes directly towards planting trees and protecting natural habitats, allowing our community to contribute positively to the environment with every carve.</li>
+                </ul>
+            </div>
+
+            <!-- Mobile & Tech Features -->
+            <div class="mb-12 p-6 bg-EFEBE9 rounded-xl shadow-md card-hover-effect">
+                <h3 class="text-3xl font-semibold text-333333 mb-4">📲 Mobile & Tech Features: Carve Anywhere, Anytime</h3>
+                <p class="text-lg mb-4">Bark & Blade is built for the modern carver. Our platform is designed to be fully accessible and highly functional across all your devices, ensuring your carving journey is seamless whether you're at your workbench or on the go.</p>
+                <ul class="space-y-3 text-lg list-disc list-inside mb-4">
+                    <li><span class="font-medium text-795548">Fully Mobile-Optimized, Sleek, Clean UI:</span> Our website boasts a responsive design that adapts beautifully to any screen size, from smartphones to large desktops. The user interface is clean, intuitive, and easy to navigate, providing an optimal experience regardless of your device.</li>
+                    <li><span class="font-medium text-795548">Downloadable Patterns Formatted for Tablets & Phones:</span> All our free and premium carving patterns are optimized for easy viewing and printing from mobile devices, allowing you to take your templates to your workshop without hassle.</li>
+                    <li><span class="font-medium text-795548">Progress Tracking Sync Across Devices:</span> Your "My Workshop Dashboard" seamlessly syncs your project progress, skill tracking, and badge achievements across all your logged-in devices. Start a lesson on your desktop and pick up right where you left off on your tablet or phone.</li>
+                    <li><span class="font-medium text-795548">Future AR Tool Visualization:</span> Looking ahead, we envision integrating Augmented Reality (AR) technology that will allow you to visualize tools in your own space before purchase. Imagine seeing a new carving knife or gouge virtually placed on your workbench, giving you a real sense of its size and fit.</li>
+                </ul>
+            </div>
+
+            <!-- Merged Marketing Campaigns -->
+            <div class="mb-12 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                <h3 class="text-3xl font-semibold text-333333 mb-4">📢 Merged Marketing Campaigns: Spreading the Word</h3>
+                <p class="text-lg mb-4">Our marketing efforts are designed to reach and inspire carvers worldwide, fostering a growing community and celebrating the art of woodcraft through engaging campaigns.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white rounded-xl shadow-md overflow-hidden">
+                        <thead class="bg-795548 text-white">
+                            <tr>
+                                <th class="py-3 px-6 text-left text-sm font-semibold uppercase tracking-wider rounded-tl-xl">Campaign Name</th>
+                                <th class="py-3 px-6 text-left text-sm font-semibold uppercase tracking-wider rounded-tr-xl">Concept</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-EFEBE9">
+                            <tr class="hover:bg-EFEBE9 transition duration-200">
+                                <td class="py-4 px-6 font-medium text-333333">Grain to Greatness</td>
+                                <td class="py-4 px-6 text-gray-700">Beginner onboarding kits with step-by-step tutorials, guiding new carvers from their first cut to their first finished piece.</td>
+                            </tr>
+                            <tr class="hover:bg-EFEBE9 transition duration-200">
+                                <td class="py-4 px-6 font-medium text-333333">Blade & Burl Showcase</td>
+                                <td class="py-4 px-6 text-gray-700">Our flagship global community carving competition, celebrating exceptional talent and innovative designs.</td>
+                            </tr>
+                            <tr class="hover:bg-EFEBE9 transition duration-200">
+                                <td class="py-4 px-6 font-medium text-333333">Woodworker's Weekend</td>
+                                <td class="py-4 px-6 text-gray-700">A series of virtual live workshops for all skill levels, featuring guest artisans and interactive sessions.</td>
+                            </tr>
+                            <tr class="hover:bg-EFEBE9 transition duration-200">
+                                <td class="py-4 px-6 font-medium text-333333">Little Whittlers</td>
+                                <td class="py-4 px-6 text-gray-700">A safe, guided introductory series designed specifically for kids and families, fostering a love for carving from a young age.</td>
+                            </tr>
+                            <tr class="hover:bg-EFEBE9 transition duration-200">
+                                <td class="py-4 px-6 font-medium text-333333">From Bark to Blade</td>
+                                <td class="py-4 px-6 text-gray-700">Behind-the-scenes content exploring ethical wood sourcing, the journey of raw materials, and the artistry involved in transforming them.</td>
+                            </tr>
+                            <tr class="hover:bg-EFEBE9 transition duration-200">
+                                <td class="py-4 px-6 font-medium text-333333">30 Days of Carving</td>
+                                <td class="py-4 px-6 text-gray-700">A daily skill-building project series, providing structured practice and motivation for continuous improvement.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Future Growth Path -->
+            <div class="mb-12 p-6 bg-EFEBE9 rounded-xl shadow-md card-hover-effect">
+                <h3 class="text-3xl font-semibold text-333333 mb-4">🌍 Future Growth Path: Expanding Our Horizon</h3>
+                <p class="text-lg mb-4">Bark & Blade is committed to continuous innovation and expansion, ensuring we remain at the forefront of the wood carving community and continue to provide unparalleled value to our members.</p>
+                <ul class="space-y-3 text-lg list-disc list-inside mb-4">
+                    <li><span class="font-medium text-795548">Premium Bark & Blade Pro Membership:</span> We plan to introduce an exclusive membership tier offering advanced resources, including:
+                        <ul class="list-circle list-inside ml-6 mt-2">
+                            <li><span class="font-normal text-333333">Access to a comprehensive library of masterclass videos.</span></li>
+                            <li><span class="font-normal text-333333">Exclusive downloadable patterns and project blueprints.</span></li>
+                            <li><span class="font-normal text-333333">Priority access to live virtual workshops and Q&A sessions.</span></li>
+                            <li><span class="font-normal text-333333">Discounts on tools and materials from The Artisan Shop.</span></li>
+                            <li><span class="font-normal text-333333">Personalized feedback sessions with expert carvers.</span></li>
+                        </ul>
+                    </li>
+                    <li><span class="font-medium text-795548">Regional Artisan Partnerships:</span> Collaborating with local master carvers to create limited-edition product lines, showcasing unique regional styles and supporting local craftsmanship.</li>
+                    <li><span class="font-medium text-795548">Global Expansion:</span> Extending our reach with localized content, international shipping options for The Artisan Shop, and organizing global meetups and events to foster a truly worldwide carving community.</li>
+                    <li><span class="font-medium text-795548">Bark & Blade YouTube Educational Series:</span> Launching a dedicated YouTube channel featuring free tutorials, carving tips, tool reviews, and artisan interviews to reach a wider audience and provide accessible learning.</li>
+                    <li><span class="font-medium text-795548">Nature Retreat Carving Workshops:</span> Offering immersive, in-person carving workshops set in beautiful natural environments, combining the art of carving with the tranquility of nature.</li>
+                </ul>
+            </div>
+
+            <!-- Unified Strengths of Bark & Blade -->
+            <div class="mb-12 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                <h3 class="text-3xl font-semibold text-333333 mb-4">🌟 Unified Strengths of Bark & Blade: Our Core Advantages</h3>
+                <p class="text-lg mb-4">Bark & Blade stands out as the premier destination for wood carving enthusiasts due to our unique blend of tradition, technology, and community. Our strengths are woven into every aspect of our platform, creating an unparalleled experience.</p>
+                <ul class="space-y-3 text-lg list-disc list-inside mb-4">
+                    <li><span class="font-medium text-795548">Seamless Blend of Rustic & Modern:</span> We uniquely combine the authentic, tactile joy of rustic craftsmanship with the convenience and accessibility of modern technology. Our platform is intuitive, beautiful, and deeply respectful of the craft's heritage.</li>
+                    <li><span class="font-medium text-795548">Robust Educational Resources:</span> From beginner guides to expert masterclasses, our comprehensive Craft Library and Workshops & Tutorials provide an unmatched depth of knowledge for every experience level. We empower you to learn, practice, and master new skills at your own pace.</li>
+                    <li><span class="font-medium text-795548">Empowering, Supportive Global Community:</span> Our vibrant Community Hub fosters a welcoming environment where carvers can connect, share, receive feedback, and inspire one another. It's a place of mutual growth and shared passion, free from judgment.</li>
+                    <li><span class="font-medium text-795548">Sustainability Embedded in Every Element:</span> Our commitment to ethical wood sourcing, promotion of reclaimed wood, and the "Nature to Nurture" initiative demonstrates our deep dedication to environmental responsibility. We ensure your craft contributes positively to the planet.</li>
+                    <li><span class="font-medium text-795548">Showcases the Artistry of Wood Like No Other:</span> Through high-quality visuals, artisan spotlights, and a focus on the natural beauty of wood, Bark & Blade elevates wood carving from a hobby to a celebrated art form, inspiring awe and appreciation for this timeless craft.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Customer Satisfaction Section -->
+        <section class="mb-16 p-6 md:p-10 bg-EFEBE9 rounded-xl shadow-inner">
+            <h2 class="text-4xl font-bold text-795548 mb-8 text-center">Our Commitment to Customer Satisfaction</h2>
+            <p class="text-lg mb-8 text-center max-w-3xl mx-auto">At Bark & Blade, your satisfaction is the cornerstone of our mission. We are dedicated to providing an exceptional experience, from the quality of our tools and educational content to the vibrancy of our community. We believe that true success is measured by the joy and growth of our carvers.</p>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-3xl font-semibold text-333333 mb-4">What Our Community Says:</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-md card-hover-effect">
+                            <p class="italic text-gray-700 mb-3">"Bark & Blade transformed my hobby into a passion. The tutorials are incredibly clear, and the community support is unparalleled. I've learned so much and feel truly connected."</p>
+                            <p class="font-semibold text-795548">- Sarah L., Beginner Carver</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md card-hover-effect">
+                            <p class="italic text-gray-700 mb-3">"The quality of tools from The Artisan Shop is exceptional. I appreciate their commitment to ethical sourcing, and the Wood Species Explorer is an invaluable resource for my projects."</p>
+                            <p class="font-semibold text-795548">- David M., Professional Artisan</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md card-hover-effect">
+                            <p class="italic text-gray-700 mb-3">"The '30 Days of Carving' challenge was exactly what I needed to get back into carving consistently. The daily mini-projects kept me engaged and helped me refine my techniques."</p>
+                            <p class="font-semibold text-795548">- Emily R., Hobbyist</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-semibold text-333333 mb-4">Our Promise to You:</h3>
+                    <p class="text-lg mb-4">We are constantly striving to improve and expand our offerings. If you ever have feedback, suggestions, or encounter any issues, our dedicated support team is here to assist you. We promise to listen, respond promptly, and work tirelessly to ensure your experience with Bark & Blade is nothing short of excellent.</p>
+                    <ul class="space-y-3 text-lg list-disc list-inside">
+                        <li><span class="font-medium text-795548">Quality Assurance:</span> We stand behind the quality of all our products and content.</li>
+                        <li><span class="font-medium text-795548">Responsive Support:</span> Our team is ready to help with any questions or concerns.</li>
+                        <li><span class="font-medium text-795548">Continuous Improvement:</span> We actively seek and integrate user feedback to enhance our platform.</li>
+                        <li><span class="font-medium text-795548">Community First:</span> We prioritize fostering a positive, supportive, and inspiring environment for all carvers.</li>
+                    </ul>
+                    <div class="flex justify-center mt-8">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer Section -->
+        <section class="mb-16 p-6 md:p-10 bg-white rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-795548 mb-8 text-center">Disclaimer</h2>
+            <div class="text-base text-gray-700 space-y-6 leading-relaxed">
+                <p><strong>General Information:</strong> The content provided on the Bark & Blade website, including but not limited to text, graphics, images, videos, tutorials, and patterns, is for informational and educational purposes only. While we strive to ensure the accuracy and reliability of the information presented, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk. It is important to conduct your own research and verification.</p>
+
+                <p><strong>Safety Warning:</strong> Wood carving involves the use of sharp tools and can be inherently dangerous if proper safety precautions are not observed. Bark & Blade strongly advises all users to exercise extreme caution and to follow all recommended safety guidelines, including but not limited to wearing appropriate personal protective equipment (PPE) such as safety gloves and eye protection. The tutorials and advice provided on this website are intended as general guidance and should not replace professional instruction or common sense. Bark & Blade, its affiliates, employees, and contributors shall not be held responsible for any injuries, damages, or losses incurred as a result of using the tools, techniques, or information presented on this website. Users assume full responsibility for their own safety and the safe use of tools and materials.</p>
+
+                <p><strong>Product Information:</strong> Information regarding products, tools, and materials available in "The Artisan Shop" or mentioned elsewhere on the website is provided for general reference. While we endeavor to keep product information up-to-date and accurate, specifications, availability, and pricing are subject to change without notice. Product images are for illustrative purposes only and may differ from the actual product. Users are encouraged to review product descriptions, specifications, and manufacturer's guidelines thoroughly before making a purchase or using any product. Bark & Blade does not endorse or guarantee the performance of any third-party products mentioned or sold on this site.</p>
+
+                <p><strong>Intellectual Property:</strong> All content on the Bark & Blade website, including but not limited to text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of Bark & Blade or its content suppliers and protected by international copyright laws. The compilation of all content on this site is the exclusive property of Bark & Blade and protected by international copyright laws. You may download and print patterns for personal, non-commercial use only. Any unauthorized reproduction, distribution, display, or transmission of any content on this site is strictly prohibited without the express written permission of Bark & Blade.</p>
+
+                <p><strong>External Links:</strong> The Bark & Blade website may contain links to external websites that are not provided or maintained by or in any way affiliated with Bark & Blade. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s). We do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.</p>
+
+                <p><strong>User-Generated Content:</strong> The "Global Community Hub" and other interactive areas of the website may allow users to post, upload, publish, submit, or transmit content, including but not limited to text, photos, and videos ("User Content"). You are solely responsible for your User Content. By posting User Content, you grant Bark & Blade a non-exclusive, worldwide, royalty-free, irrevocable, perpetual, and sublicensable license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such User Content in any media. You represent and warrant that you own or have the necessary licenses, rights, consents, and permissions to publish User Content. Bark & Blade does not endorse any User Content and is not responsible for the accuracy, usefulness, safety, or intellectual property rights of or relating to such User Content. We reserve the right to remove any User Content that we deem inappropriate or in violation of our terms of service.</p>
+
+                <p><strong>Availability and Access:</strong> Bark & Blade strives to ensure the website is available 24/7. However, we do not guarantee uninterrupted or error-free access to the website. Access may be suspended temporarily and without notice in the case of system failure, maintenance, repair, or for reasons beyond our control. We reserve the right to modify, suspend, or discontinue any aspect of the website at any time, including the availability of any features, databases, or content, without prior notice or liability.</p>
+
+                <p><strong>Limitation of Liability:</strong> In no event will Bark & Blade, its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the website; (ii) any conduct or content of any third party on the website; (iii) any content obtained from the website; and (iv) unauthorized access, use, or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence), or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose. This limitation of liability applies to the fullest extent permitted by law in the applicable jurisdiction.</p>
+
+                <p><strong>Governing Law:</strong> This disclaimer shall be governed by and construed in accordance with the laws of the jurisdiction where Bark & Blade is incorporated, without regard to its conflict of law provisions. Any legal action or proceeding relating to your access to, or use of, the website or its content shall be instituted in a state or federal court in that jurisdiction.</p>
+
+                <p><strong>Changes to Disclaimer:</strong> Bark & Blade reserves the right to amend this disclaimer at any time without prior notice. By continuing to use the website after any changes are made, you agree to be bound by the revised disclaimer. We encourage users to regularly review this section to stay informed of any updates.</p>
+
+                <p><strong>Contact:</strong> If you have any questions regarding this disclaimer or any other aspect of our website, please do not hesitate to contact us through the contact information provided in the footer.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-333333 text-EFEBE9 py-8 px-6 md:px-12 rounded-t-xl mt-16">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div>
+                <h3 class="text-2xl font-bold text-795548 mb-4">Bark & Blade</h3>
+                <p class="text-lg mb-2">Crafted by Hand. Inspired by Nature.</p>
+                <p class="text-lg">Where Wood, Skill, and Artistry Unite.</p>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold text-795548 mb-4">Connect With Us</h3>
+                <p class="text-lg mb-2">Email: info@barkandblade.com</p>
+                <p class="text-lg mb-2">Phone: +1 (555) 123-4567</p>
+                <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                    <a href="#" class="text-EFEBE9 hover:text-4CAF50 transition duration-300">Facebook</a>
+                    <a href="#" class="text-EFEBE9 hover:text-4CAF50 transition duration-300">Instagram</a>
+                    <a href="#" class="text-EFEBE9 hover:text-4CAF50 transition duration-300">YouTube</a>
+                    <a href="#" class="text-EFEBE9 hover:text-4CAF50 transition duration-300">Pinterest</a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold text-795548 mb-4">Our Address</h3>
+                <address class="not-italic text-lg">
+                    Bark & Blade Headquarters<br>
+                    123 Woodcraft Lane<br>
+                    Artisan City, State 98765<br>
+                    Country
+                </address>
+            </div>
+        </div>
+        <div class="border-t border-B0BEC5 mt-8 pt-6 text-center text-sm text-gray-400">
+            &copy; 2025 Bark & Blade. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

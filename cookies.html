@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy — Bark & Blade</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter and Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Clean sans-serif body text */
+            color: #333333; /* Deep Charcoal */
+            background-color: #EFEBE9; /* Soft Bark Beige */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif; /* Serif elegance for headings */
+            color: #333333; /* Deep Charcoal */
+        }
+        /* Custom scrollbar for a more refined look */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #EFEBE9; /* Soft Bark Beige */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #795548; /* Timber Brown */
+            border-radius: 10px;
+            border: 3px solid #EFEBE9;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4CAF50; /* Forest Green */
+        }
+
+        /* Custom hover effects for buttons/cards */
+        .btn-hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn-hover-effect:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card-hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Cookie Consent Dialogue Styling */
+        #cookie-consent-dialogue {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333333; /* Deep Charcoal */
+            color: #EFEBE9; /* Soft Bark Beige */
+            padding: 1.5rem;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        #cookie-consent-dialogue p {
+            margin-bottom: 1rem;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+        #cookie-consent-dialogue button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px; /* Full rounded */
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        #accept-cookies {
+            background-color: #4CAF50; /* Forest Green */
+            color: white;
+            margin-right: 1rem;
+        }
+        #accept-cookies:hover {
+            background-color: #66BB6A; /* Lighter Green */
+            transform: translateY(-2px);
+        }
+        #decline-cookies {
+            background-color: #795548; /* Timber Brown */
+            color: white;
+        }
+        #decline-cookies:hover {
+            background-color: #8D6E63; /* Lighter Brown */
+            transform: translateY(-2px);
+        }
+        @media (max-width: 768px) {
+            #cookie-consent-dialogue {
+                padding: 1rem;
+            }
+            #cookie-consent-dialogue button {
+                margin-right: 0;
+                margin-bottom: 0.75rem;
+                width: 100%;
+            }
+            #cookie-consent-dialogue .flex {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed text-lg">
+    <!-- Header - Same as other pages -->
+    <header class="bg-white shadow-lg py-4 px-6 md:px-12 rounded-b-xl sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="https://placehold.co/60x60/795548/EFEBE9?text=BB" alt="Bark & Blade Logo" class="rounded-full shadow-md">
+                <span class="text-3xl font-bold text-795548">Bark & Blade</span>
+            </a>
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex flex-wrap justify-center space-x-6 md:space-x-8 text-lg font-medium">
+                  <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto my-8 p-4 md:p-8 bg-white rounded-xl shadow-xl">
+        <section class="mb-16 p-6 md:p-10 bg-EFEBE9 rounded-xl shadow-inner">
+            <h1 class="text-5xl md:text-6xl font-bold text-795548 mb-10 text-center">Bark & Blade Cookie Policy</h1>
+            <p class="text-lg mb-8 text-center max-w-4xl mx-auto">
+                This Cookie Policy explains how Bark & Blade ("we," "us," or "our") uses cookies and similar technologies on our website, barkandblade.com (the "Website"). By continuing to browse or use our Website, you are agreeing to our use of cookies in accordance with this policy. We are committed to transparency regarding our use of these technologies, which are essential for providing you with a seamless and personalized experience. Cookies help us understand how you interact with our platform, allowing us to enhance functionality, deliver relevant content, and ensure the security of your online journey with Bark & Blade. This policy provides detailed information about the types of cookies we use, their purposes, and how you can manage your preferences. We believe that informed consent is crucial, and this document is designed to empower you with the knowledge needed to make choices about your data.
+            </p>
+            <p class="text-lg mb-12 text-center max-w-4xl mx-auto">
+                Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide information to the owners of the site. They enable the website to "remember" your actions or preferences over time. This policy is an integral part of our broader Privacy Policy and Terms and Conditions, reflecting our comprehensive approach to data protection. We encourage you to read this policy carefully to understand how cookies contribute to your Bark & Blade experience and how you can exercise control over their use. Our goal is to ensure that your interaction with our platform is not only inspiring for your wood carving endeavors but also secure and respectful of your privacy choices.
+            </p>
+
+            <div class="space-y-12">
+                <!-- Point 1 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">1. What are Cookies?</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies are small data files that websites place on your computer or mobile device when you visit them. They are widely used to make websites work, or work more efficiently, as well as to provide reporting information. Cookies enable the website to "remember" your actions or preferences over a period of time, so you don't have to keep re-entering them whenever you come back to the site or browse from one page to another. They are essentially a unique identifier for your browser or device, allowing for a more personalized and efficient browsing experience.
+                    </p>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">2. First-Party Cookies</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        First-party cookies are those set directly by the Bark & Blade website (barkandblade.com). These cookies are essential for core website functionality and are often used to remember your preferences, maintain your login session, or track items in your shopping cart. Because they are set by the domain you are visiting, they are generally considered more secure and less privacy-invasive than third-party cookies. Our first-party cookies are crucial for ensuring a smooth and personalized user experience as you navigate our platform and interact with its features.
+                    </p>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">3. Third-Party Cookies</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Third-party cookies are set by domains other than the one you are visiting. These are typically used for cross-site tracking, advertising, or embedding content from external services (e.g., YouTube videos, social media buttons). On Bark & Blade, third-party cookies may be set by our analytics providers, advertising partners, or social media platforms. While we vet our third-party partners, their cookie practices are governed by their own privacy policies. We provide mechanisms for you to manage your preferences for these cookies.
+                    </p>
+                </div>
+
+                <!-- Point 4 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">4. Session Cookies</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Session cookies are temporary cookies that remain on your device only for the duration of your browsing session. They are essential for maintaining your login state as you navigate through different pages of our website, ensuring you don't have to log in repeatedly. Once you close your browser, these cookies are automatically deleted. They do not collect any personal information for tracking or marketing purposes and are crucial for the basic functionality and usability of the Bark & Blade platform.
+                    </p>
+                </div>
+
+                <!-- Point 5 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">5. Persistent Cookies</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Persistent cookies remain on your device for a longer period, even after you close your browser, or until you manually delete them. These cookies are used to remember your preferences and settings for future visits, such as remembering your login details for convenience or your preferred language. They also enable us to analyze long-term user behavior and personalize content across multiple sessions. You can manage persistent cookies through your browser settings, allowing you to control their retention.
+                    </p>
+                </div>
+
+                <!-- Point 6 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">6. Essential/Strictly Necessary Cookies</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        These cookies are strictly necessary for the Bark & Blade website to function properly. They enable core functionalities such as secure login, shopping cart management, and remembering your cookie consent preferences. Without these cookies, certain parts of the Website may not be accessible or function correctly. Because they are essential for providing the service you request, they are typically set automatically and do not require your explicit consent in most jurisdictions.
+                    </p>
+                </div>
+
+                <!-- Point 7 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">7. Performance/Analytics Cookies</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Performance or analytics cookies collect information about how visitors use our website, such as which pages are visited most often, the time spent on pages, and if users encounter any error messages. This data is aggregated and anonymized, meaning it does not personally identify you. It helps us understand user behavior, identify areas for improvement, and optimize the website's performance and content. These cookies are crucial for our continuous improvement efforts, ensuring a better user experience.
+                    </p>
+                </div>
+
+                <!-- Point 8 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">8. Functionality Cookies</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Functionality cookies allow our website to remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personal features. For instance, remembering your preferred wood species in the explorer or your last viewed tutorial. These cookies can also be used to remember changes you have made to text size, fonts, and other customizable parts of web pages. The information these cookies collect may be anonymized, and they cannot track your browsing activity on other websites.
+                    </p>
+                </div>
+
+                <!-- Point 9 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">9. Advertising/Targeting Cookies</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Advertising or targeting cookies are used to deliver more relevant advertisements to you and your interests. They are usually placed by advertising networks with our permission. They remember that you have visited a website and this information is shared with other organizations, such as advertisers. These cookies help us measure the effectiveness of our advertising campaigns and personalize the ads you see both on and off Bark & Blade. Your consent is explicitly requested for the use of these cookies.
+                    </p>
+                </div>
+
+                <!-- Point 10 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">10. Social Media Cookies</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Our website may include social media features, such as "Like" or "Share" buttons, which may set cookies on your device. These cookies are typically set by the social media platforms themselves (e.g., Facebook, Instagram, YouTube, Pinterest) and allow them to track your browsing activity across different sites, potentially building a profile of your interests. This enables personalized content and advertising on those social media platforms. We encourage you to review the privacy policies of the respective social media companies.
+                    </p>
+                </div>
+
+                <!-- Point 11 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">11. How We Use Cookies: Authentication</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies are essential for authenticating your identity when you log into your Bark & Blade account. They store information about your login session, allowing you to navigate through various sections of the Website without repeatedly entering your credentials. This ensures a secure and seamless user experience, enabling you to access your "My Workshop Dashboard," participate in the Global Community Hub, and make purchases from The Artisan Shop without interruption. These authentication cookies are strictly necessary for the proper functioning of our member services.
+                    </p>
+                </div>
+
+                <!-- Point 12 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">12. How We Use Cookies: Personalization</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        We use cookies to personalize your experience on Bark & Blade. This includes remembering your language preferences, displaying content relevant to your interests (e.g., suggesting tutorials based on your viewing history), and tailoring product recommendations in The Artisan Shop. Personalization cookies enhance your engagement with our platform by making it feel more customized and responsive to your individual needs and preferences as a wood carver, guiding you towards content and tools that genuinely resonate with your artistic journey.
+                    </p>
+                </div>
+
+                <!-- Point 13 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">13. How We Use Cookies: Shopping Cart Functionality</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        When you add items to your shopping cart in The Artisan Shop, cookies are used to remember these selections as you continue browsing or navigate to other pages. This ensures that your chosen products remain in your cart until you are ready to complete your purchase. Without these cookies, your shopping experience would be significantly hindered, as your cart would empty each time you moved to a new page. These are essential for e-commerce functionality and a smooth shopping experience.
+                    </p>
+                </div>
+
+                <!-- Point 14 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">14. How We Use Cookies: Website Analytics</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies are used by our analytics providers (e.g., Google Analytics) to collect aggregated and anonymized data about how users interact with our Website. This includes information such as the number of visitors, pages visited, time spent on site, and referral sources. This data helps us understand user behavior, identify popular content, and pinpoint areas for improvement. These insights are crucial for optimizing website performance, enhancing content strategy, and ensuring Bark & Blade remains an effective resource for wood carving enthusiasts.
+                    </p>
+                </div>
+
+                <!-- Point 15 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">15. How We Use Cookies: Advertising Effectiveness</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Advertising cookies help us measure the effectiveness of our marketing campaigns. They track whether users click on our ads and then perform a desired action, such as making a purchase or signing up for a newsletter. This allows us to optimize our ad spending and deliver more relevant advertisements to potential users both on and off our platform. This data is typically aggregated and does not personally identify you, but helps us understand broad advertising trends.
+                    </p>
+                </div>
+
+                <!-- Point 16 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">16. How We Use Cookies: Security and Fraud Prevention</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Certain cookies play a role in enhancing the security of our website and preventing fraudulent activities. They can help us detect unusual login patterns, identify suspicious behavior, and protect against cyber threats. By analyzing these cookie-based insights, we can implement proactive measures to safeguard your account and personal information, ensuring a secure and trustworthy environment for all users. These security cookies are vital for maintaining the integrity of our platform.
+                    </p>
+                </div>
+
+                <!-- Point 17 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">17. How We Use Cookies: User Preferences</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies remember your user preferences, such as your chosen language, currency, or display settings. This means that when you return to Bark & Blade, the website will automatically load with your preferred configurations, saving you time and effort. These cookies enhance usability and provide a more customized browsing experience, adapting the platform to your individual needs and making your interaction with our content more efficient and enjoyable.
+                    </p>
+                </div>
+
+                <!-- Point 18 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">18. How We Use Cookies: Content Recommendations</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies help power our content recommendation engine. By tracking your viewing history in the Craft Library, your downloaded patterns, and your interactions within the Community Gallery, we can intelligently suggest tutorials, wood species, and tools that align with your evolving interests and skill level. This personalization aims to proactively guide your learning path, introducing you to new techniques or projects you might genuinely enjoy, making your exploration of woodcraft more intuitive and enriching.
+                    </p>
+                </div>
+
+                <!-- Point 19 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">19. How We Use Cookies: A/B Testing</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        We use cookies to conduct A/B testing, which involves showing different versions of our website features or designs to various user segments. This allows us to collect data on how these segments interact with the variations to determine which performs best. This data, which does not personally identify you, enables us to make data-driven decisions on improvements to our website, from navigation flow to content presentation, ensuring that our platform is constantly refined for optimal usability and engagement.
+                    </p>
+                </div>
+
+                <!-- Point 20 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">20. How We Use Cookies: Website Performance</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies help us monitor and improve the overall performance of our website. They can track loading times, identify bottlenecks, and measure server response times. This technical data is crucial for ensuring that Bark & Blade remains fast, reliable, and accessible for all users. By continuously analyzing these performance metrics, we can optimize our infrastructure and deliver a smooth and efficient browsing experience, minimizing any disruptions to your wood carving journey.
+                    </p>
+                </div>
+
+                <!-- Point 21 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">21. Cookie Consent Management</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Upon your first visit to our website, you will be presented with a cookie consent banner that provides information about the types of cookies we use and allows you to manage your preferences. You can choose to accept all cookies, customize your settings, or reject non-essential cookies. This mechanism ensures that we obtain your informed consent for cookie usage, particularly for those not strictly necessary for website functionality. We respect your choices and will only deploy cookies in accordance with your preferences, providing you with granular control.
+                    </p>
+                </div>
+
+                <!-- Point 22 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">22. Managing Cookies Through Browser Settings</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Most web browsers allow you to manage your cookie preferences through their settings. You can typically configure your browser to notify you when you receive a cookie, giving you the option to accept or decline it. You can also delete existing cookies or set your browser to automatically reject all cookies. Please note that disabling certain cookies, especially essential ones, may affect the functionality and usability of our Website. Refer to your browser's help documentation for specific instructions on managing cookies.
+                    </p>
+                </div>
+
+                <!-- Point 23 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">23. Do Not Track Signals</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Some web browsers may transmit "Do Not Track" (DNT) signals to websites. Currently, there is no universally accepted standard for how websites should respond to these signals. Bark & Blade does not currently respond to DNT signals. However, you can manage your cookie preferences directly through our cookie consent banner or your browser settings as described in this policy. We are monitoring developments in DNT standards and may update our practices in the future.
+                    </p>
+                </div>
+
+                <!-- Point 24 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">24. Web Beacons and Pixel Tags</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        In addition to cookies, Bark & Blade may use other similar technologies like web beacons (also known as pixel tags or clear GIFs). These are tiny graphics with a unique identifier, similar in function to cookies, and are used to track the online movements of web users. Unlike cookies, which are stored on a user's computer hard drive, web beacons are embedded invisibly on web pages or in emails. They help us determine which emails have been opened by recipients and allow us to gauge the effectiveness of certain communications and marketing campaigns.
+                    </p>
+                </div>
+
+                <!-- Point 25 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">25. Local Storage (HTML5)</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Bark & Blade may also use HTML5 Local Storage, a technology that allows websites to store data directly in the browser. Unlike cookies, Local Storage can store significantly more data and is not automatically sent with every HTTP request. We might use Local Storage to save user preferences, such as your progress in a tutorial series, or to cache certain website elements for faster loading times. This data remains on your device until you clear your browser's local storage.
+                    </p>
+                </div>
+
+                <!-- Point 26 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">26. Cookie Duration</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        The duration for which a cookie remains on your device depends on whether it is a "session" cookie or a "persistent" cookie. Session cookies expire when you stop browsing. Persistent cookies remain until they expire or are deleted. The expiration period for persistent cookies varies, from a few minutes to several years, depending on their purpose. For example, a cookie remembering your login might last for a few days, while an analytics cookie might persist for a year to track returning visitors.
+                    </p>
+                </div>
+
+                <!-- Point 27 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">27. Cookie Consent Record</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        When you make a choice regarding our cookie consent banner (accept or decline), we set a specific cookie to remember your preference. This ensures that you are not prompted with the banner on every subsequent visit for a defined period. This "consent cookie" is essential for respecting your choice and providing a consistent user experience. It typically stores a simple "accepted" or "declined" value and has a specific expiration date, after which you might be prompted again to reconfirm your preferences.
+                    </p>
+                </div>
+
+                <!-- Point 28 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">28. Cookies and Personal Data</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        While cookies themselves are small text files and do not directly contain personal data like your name or email address, they can store unique identifiers that, when combined with other information, could potentially be linked to an individual. For example, a cookie might store a user ID that is then linked to your personal data on our servers. We handle any information collected via cookies in accordance with our comprehensive Privacy Policy, ensuring your data is protected and used responsibly.
+                    </p>
+                </div>
+
+                <!-- Point 29 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">29. Third-Party Analytics Cookies</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        We use third-party analytics services, such as Google Analytics, to help us understand how our Website is used. These services use cookies to collect information about your interactions with the site, including the pages you visit, the time you spend on each page, and your navigation paths. This data is aggregated and anonymized to provide us with valuable insights into overall website performance and user trends. These cookies do not personally identify you, but rather provide statistical data to improve our services.
+                    </p>
+                </div>
+
+                <!-- Point 30 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">30. Third-Party Advertising Cookies</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Some third-party advertising partners may place cookies on your device to track your browsing activity across different websites and build a profile of your interests. This enables them to show you personalized advertisements that are more relevant to you. These cookies are often used for retargeting purposes, showing you ads for products or services you've previously viewed. You have the right to opt-out of these types of cookies through our consent banner or through industry opt-out mechanisms.
+                    </p>
+                </div>
+
+                <!-- Point 31 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">31. Cookie Audit and Review</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Bark & Blade regularly audits the cookies used on its Website to ensure that this Cookie Policy remains accurate and up-to-date. This involves identifying new cookies, assessing their purpose and duration, and verifying that they are categorized correctly. Our commitment to ongoing cookie audits ensures that we maintain transparency and compliance with evolving data protection regulations, providing you with the most current information about our cookie practices.
+                    </p>
+                </div>
+
+                <!-- Point 32 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">32. Legal Basis for Cookie Use</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        The legal basis for using strictly necessary cookies is our legitimate interest in providing a functional and secure website. For all other types of cookies (performance, functionality, advertising, social media), our legal basis is your explicit consent. We obtain this consent through our cookie consent banner, which allows you to make an informed choice about which categories of cookies you wish to enable. You have the right to withdraw your consent at any time, as detailed in this policy.
+                    </p>
+                </div>
+
+                <!-- Point 33 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">33. Impact of Declining Cookies</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you choose to decline non-essential cookies, certain features or functionalities of the Bark & Blade website may be limited or unavailable. For example, if you decline advertising cookies, you may still see ads, but they will be less personalized. If you decline functionality cookies, your preferences might not be remembered for future visits. Declining strictly necessary cookies may prevent the website from functioning at all. We strive to inform you of the potential impact of your choices on your user experience.
+                    </p>
+                </div>
+
+                <!-- Point 34 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">34. Cookie Policy Updates</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Bark & Blade may update this Cookie Policy from time to time to reflect changes in our cookie practices, technologies, or legal requirements. We will post any changes on this page and update the "Last Updated" date at the top of the policy. For significant changes, we may provide more prominent notice, such as through a website banner or email. We encourage you to review this Cookie Policy periodically to stay informed about how we are using cookies and similar technologies.
+                    </p>
+                </div>
+
+                <!-- Point 35 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">35. How to Contact Us About Cookies</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you have any questions or concerns about our use of cookies or this Cookie Policy, please contact our Privacy Team at <a href="mailto:privacy@barkandblade.com" class="text-4CAF50 hover:underline">privacy@barkandblade.com</a>. We are committed to providing transparent and comprehensive answers to your inquiries regarding our data practices. Your feedback helps us ensure that our policies are clear and that your privacy is protected. Please feel free to reach out for any clarifications or assistance.
+                    </p>
+                </div>
+
+                <!-- Point 36 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">36. Specific Cookie Examples: Authentication</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        An example of an authentication cookie is one that stores a unique session ID after you log in. This ID allows our server to recognize you as an authenticated user as you move between pages, preventing you from having to re-enter your password for every action. This cookie is typically a session cookie, meaning it expires when you close your browser, ensuring that your session is securely terminated. It is fundamental for maintaining your logged-in state and accessing member-only areas.
+                    </p>
+                </div>
+
+                <!-- Point 37 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">37. Specific Cookie Examples: Shopping Cart</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        A common example of a shopping cart cookie is one that stores a unique identifier for your cart. This cookie allows The Artisan Shop to remember the items you've added to your cart even if you navigate away from the shop section or browse other parts of the website. It ensures that your selections persist until you complete your purchase or manually clear your cart. This is typically a persistent cookie, allowing you to return to your cart later.
+                    </p>
+                </div>
+
+                <!-- Point 38 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">38. Specific Cookie Examples: Language Preference</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        A language preference cookie stores your chosen language for the Bark & Blade website. If you select English, this cookie remembers that choice so that on your next visit, the website automatically displays in English without you needing to manually select it again. This is a functionality cookie designed to enhance your user experience by adapting the website to your preferred settings, making your interaction with our content more convenient and seamless.
+                    </p>
+                </div>
+
+                <!-- Point 39 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">39. Specific Cookie Examples: Analytics Tracking</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        An example of an analytics tracking cookie is one used by Google Analytics, which assigns a unique, anonymous ID to your browser. This ID allows Google Analytics to differentiate between unique users and track their interactions over time, such as which pages they visit, how long they stay, and what actions they take. This data helps us understand overall website traffic and user behavior patterns, providing valuable insights for site optimization without identifying you personally.
+                    </p>
+                </div>
+
+                <!-- Point 40 -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">40. Specific Cookie Examples: Advertising Personalization</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        An advertising personalization cookie might be set by a third-party ad network after you view certain products in The Artisan Shop. This cookie then allows that ad network to show you advertisements for similar wood carving tools or materials on other websites you visit. This is a targeting cookie designed to make advertising more relevant to your interests, and its use is contingent on your explicit consent through our cookie banner.
+                    </p>
+                </div>
+
+                <!-- Additional points to meet word count -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">41. Cookie Consent Banner Functionality</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Our cookie consent banner, prominently displayed upon your first visit, is designed to be user-friendly and informative. It provides a brief overview of our cookie usage and clear options to "Accept All," "Decline All (non-essential)," or "Customize Settings." This interactive element ensures that your consent is freely given, specific, informed, and unambiguous, aligning with global data protection standards. Your choice is then recorded via a consent cookie to prevent repetitive prompts during your browsing session.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">42. Cookie Management Tools</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Beyond the initial consent banner, Bark & Blade provides internal tools or links to external resources that allow you to manage your cookie preferences at any time. This might include a dedicated "Cookie Settings" link in the footer or a section within your "My Workshop Dashboard." These tools empower you to change your mind about cookie consent, enabling you to opt-in or opt-out of specific cookie categories even after your initial decision, ensuring continuous control over your data.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">43. Impact on User Experience</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        The use of cookies significantly enhances your overall user experience on Bark & Blade. They enable features like remembering your login, personalizing content recommendations, and streamlining your shopping cart process. Without cookies, you would face repetitive logins, generic content, and a less efficient browsing experience. While we respect your right to decline non-essential cookies, understanding their role in enhancing usability can help you make informed decisions about your preferences and the level of personalization you desire.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">44. Cookie Security</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Bark & Blade implements security measures to protect the integrity and confidentiality of the information stored in cookies. This includes using secure HTTP (HTTPS) for all website traffic, which encrypts data exchanged between your browser and our servers. While cookies themselves are not executable programs and cannot carry viruses, we ensure that our cookie management practices align with industry best practices to prevent unauthorized access or manipulation of cookie data, contributing to the overall security of your online experience.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">45. Cookie Data Aggregation</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Much of the data collected through cookies, particularly performance and analytics cookies, is aggregated. This means that individual user data is combined with data from many other users to create statistical summaries. This aggregated data does not identify any individual user and is used to understand broad trends, such as popular content categories or peak traffic times. This allows us to make data-driven decisions about website improvements without compromising individual user privacy.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">46. Cookie Data Anonymization</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        In addition to aggregation, we employ anonymization techniques for certain cookie-derived data. Anonymization involves removing or altering personal identifiers so that the data can no longer be linked to an individual. For example, IP addresses collected via analytics cookies might be truncated or hashed. This ensures that even if the data were to be accessed, it could not be used to identify you personally, further enhancing your privacy while still providing valuable insights for website optimization.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">47. Cookie Categories for Transparency</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        To enhance transparency, Bark & Blade categorizes its cookies into distinct groups (e.g., Essential, Performance, Functionality, Advertising). This categorization helps you understand the specific purpose of each cookie type and make informed decisions about your consent. Our cookie consent banner and this policy provide detailed explanations for each category, ensuring that you have a clear picture of how different cookies contribute to your experience on our Website.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">48. Browser-Specific Cookie Management</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        While general instructions for managing cookies are provided, specific steps may vary depending on your web browser (e.g., Chrome, Firefox, Safari, Edge). Each browser has its own settings menu where you can view, delete, and configure cookie preferences. We recommend consulting the official support documentation for your specific browser for the most accurate and up-to-date instructions on managing cookies effectively. This ensures you have the tools to control your online privacy.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">49. Third-Party Cookie Opt-Out Mechanisms</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For certain third-party advertising and analytics cookies, you may have additional opt-out options provided directly by the third-party providers themselves. Industry initiatives like the Network Advertising Initiative (NAI) and the Digital Advertising Alliance (DAA) also offer tools to opt out of interest-based advertising from participating companies. While our consent banner provides a primary control, these external mechanisms offer additional avenues for managing your preferences for third-party tracking.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">50. Future Cookie Technologies</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        The landscape of online tracking technologies is constantly evolving. Bark & Blade is committed to staying informed about new developments in cookie technologies and privacy regulations. As new technologies emerge or existing ones change, we will review and update this Cookie Policy accordingly to ensure our practices remain transparent and compliant. Our aim is to adapt to technological advancements while always prioritizing your privacy and providing you with clear information about our data handling.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">51. Cookie Policy Integration with Privacy Policy</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        This Cookie Policy is an integral part of our broader Privacy Policy. While this document focuses specifically on cookies and similar technologies, the overarching principles of data collection, use, and protection outlined in our Privacy Policy apply to all information gathered, including that obtained through cookies. We encourage you to read both policies in conjunction to gain a comprehensive understanding of our data handling practices and your privacy rights at Bark & Blade.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">52. Cookie Consent Withdrawal</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        You have the right to withdraw your consent for non-essential cookies at any time. This can typically be done by revisiting our cookie consent settings (if available as a persistent link on the site) or by adjusting your browser's cookie settings. Withdrawing consent will not affect the lawfulness of processing based on consent before its withdrawal. However, it may impact the functionality of certain website features or the personalization of your experience. We respect your autonomy in managing your cookie preferences.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">53. Cookie Consent Expiration</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Your cookie consent, once given, is typically valid for a specific period (e.g., 12 months) as determined by applicable regulations or our internal policies. After this period, or if there are significant changes to our cookie practices, you may be prompted again to reconfirm your cookie preferences. This ensures that your consent remains current and informed, and that you have regular opportunities to review and adjust your choices regarding our use of cookies.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">54. Cookie Table (Conceptual)</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        (Note: A full, dynamic cookie table is beyond the scope of a static HTML page, but conceptually, we would provide one.) In a more advanced implementation, Bark & Blade would provide a detailed cookie table listing all specific cookies used, their provider, purpose, and expiration date. This table would be dynamically updated to reflect any changes. The goal is to offer granular transparency, allowing users to see exactly which cookies are set and what information they are used for, empowering truly informed consent.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">55. Cookie-Based Personalization Examples</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Examples of cookie-based personalization include: remembering your recently viewed items in The Artisan Shop, suggesting tutorials based on your skill level (e.g., if you frequently view "Beginner" patterns), or displaying community posts from topics you've previously engaged with. These tailored experiences aim to make your time on Bark & Blade more efficient and relevant, ensuring you discover content and products that genuinely interest you, fostering a deeper connection with the wood carving community.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">56. Cross-Device Tracking (via Cookies)</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Some third-party advertising and analytics services may use cookies in conjunction with other identifiers to attempt cross-device tracking. This means they might try to link your activity across different devices (e.g., phone, tablet, desktop) to build a more comprehensive profile of your interests. While Bark & Blade itself does not engage in this, if you consent to third-party advertising cookies, this may occur. You can manage these preferences through your browser settings or specific third-party opt-out tools.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">57. Cookie Use in Email Marketing</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        When you open emails from Bark & Blade, we may use tiny pixel tags (similar to cookies) embedded in the email to track whether the email was opened and which links were clicked. This helps us measure the effectiveness of our email campaigns and understand what content is most engaging to our subscribers. This data is typically aggregated and used to improve our communication strategies, ensuring we send you relevant and valuable information about wood carving.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">58. Cookie Use for A/B Testing Variations</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        When we conduct A/B tests, cookies are used to ensure that you consistently see the same version of a feature throughout your visit. For example, if you are part of a group seeing "Version A" of a new homepage layout, a cookie ensures you continue to see Version A, allowing us to accurately measure its performance against "Version B." This helps us gather reliable data to make informed decisions about website design and functionality improvements.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">59. Cookie Use for Load Balancing</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Some cookies are used for load balancing purposes. These cookies help distribute website traffic across multiple servers, ensuring that the website remains fast and responsive even during peak usage times. They ensure you are directed to the most efficient server, optimizing your connection and preventing service interruptions. These are typically essential cookies, as they are crucial for maintaining the stability and availability of the Bark & Blade platform.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">60. Cookie Use for Fraud Detection</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies contribute to our fraud detection and prevention efforts. By analyzing patterns in cookie usage and associated data, we can identify unusual activities or suspicious behaviors that may indicate fraudulent attempts, such as unauthorized account access or payment fraud. This helps us protect both our users and our platform from malicious activities, ensuring a secure environment for all transactions and interactions within Bark & Blade.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">61. Cookie Use for User Segmentation</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies can be used to segment users into different groups based on their behavior or preferences (e.g., beginners, advanced carvers, shoppers). This segmentation allows us to deliver more targeted content, promotions, or features to specific user groups. This data is typically aggregated and anonymized for analysis, helping us understand the diverse needs of our community and tailor our offerings more effectively without identifying individuals.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">62. Cookie Use for Retargeting</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Retargeting cookies are a type of advertising cookie that allows us to show you ads for products or services you've previously shown interest in on Bark & Blade, even after you've left our site. For example, if you viewed a specific carving knife, you might see an ad for that knife on another website. This helps remind you of items you considered and encourages you to return to complete a purchase. This is done with your consent for advertising cookies.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">63. Cookie Use for Affiliate Tracking</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If Bark & Blade operates an affiliate program, cookies are used to track referrals from our affiliate partners. When you click on an affiliate link and then make a purchase on our Website, a cookie helps attribute that sale to the correct affiliate. This allows us to compensate our partners accurately. This data is primarily used for business and marketing attribution and does not personally identify you to the affiliate.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">64. Cookie Use for Content Personalization in Dashboards</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Within your "My Workshop Dashboard," cookies help personalize the content you see. For instance, they remember your progress in specific tutorials, allowing you to pick up exactly where you left off. They can also influence the display of recommended projects or tools based on your past activities and achievements. This ensures your dashboard is a truly personalized hub for your wood carving journey, tailored to your individual learning and creative progress.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">65. Cookie Use for Geographic Location (Non-Precise)</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies may store non-precise geographic location information (e.g., country or region based on your IP address). This allows Bark & Blade to display localized content, currency, or shipping options relevant to your general area. This information is typically used to enhance your browsing experience by providing region-specific information and does not pinpoint your exact location. It helps ensure the content you see is relevant to your part of the world.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">66. Cookie Use for User Feedback Surveys</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies can be used to control the display of user feedback surveys. For example, a cookie might ensure that you are only prompted to complete a survey once, or that you are not shown the same survey repeatedly within a certain timeframe. This helps us gather valuable feedback from a diverse range of users without overwhelming any single individual, ensuring a balanced and representative collection of opinions for website improvement.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">67. Cookie Use for Session Management</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Session management cookies are fundamental for maintaining your state as you navigate our website. They store a unique session ID that links your current browsing activity to your account (if logged in) or your temporary session details. This allows for continuous interaction without requiring re-authentication on every page. These are typically session cookies and are crucial for the basic functionality of the website, ensuring a smooth and uninterrupted browsing experience.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">68. Cookie Use for Website Customization</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies enable various website customization options. This might include remembering your preferred display settings (e.g., dark mode preference, font size adjustments) or specific filters you've applied in the Craft Library. These cookies enhance your experience by tailoring the website's appearance and functionality to your individual preferences, making your interaction with Bark & Blade more comfortable and efficient. They are a key component of our commitment to a user-friendly design.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">69. Cookie Use for Security Tokens</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        In some cases, cookies may store security tokens that help protect against Cross-Site Request Forgery (CSRF) attacks or other vulnerabilities. These tokens are unique, randomly generated values that are verified by our server to ensure that requests are legitimate and originate from your authenticated session. These security-related cookies are essential for protecting your account and maintaining the integrity of our website against common web threats.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">70. Cookie Use for Remember Me Functionality</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        When you select the "Remember Me" option during login, a persistent cookie is set on your device. This cookie contains an encrypted identifier that allows you to remain logged in to your Bark & Blade account for a longer period (e.g., 30 days) without needing to re-enter your password. This enhances convenience, but it's important to use this feature only on trusted, private devices to maintain account security.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">71. Cookie Use for Error Reporting</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies can assist in error reporting by storing information about a user's session when an error occurs. This might include details about the page being viewed, the type of error encountered, and the user's browser. This data, typically anonymized, helps our technical team diagnose and fix issues more efficiently, improving the stability and reliability of the website. It allows us to understand common problems and deploy targeted solutions.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">72. Cookie Use for Content Delivery Optimization</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies can be used by Content Delivery Networks (CDNs) to optimize the delivery of website content. They might help route your requests to the nearest server or remember which content has already been cached on your device. This reduces loading times and improves overall website performance, ensuring a faster and more responsive experience as you browse through tutorials, images, and product pages on Bark & Blade.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">73. Cookie Use for User Journey Mapping</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Analytics cookies help us map user journeys across our website. By tracking the sequence of pages visited and interactions made, we can understand typical user flows (e.g., from homepage to tutorial to shop). This data is aggregated and anonymized, providing insights into how users navigate our platform. This helps us optimize website layout, improve content discoverability, and streamline user pathways, making your experience more intuitive and efficient.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">74. Cookie Use for Website Personalization (Unregistered Users)</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Even for unregistered users, cookies can provide a degree of personalization. For instance, if you frequently visit pages related to "beginner whittling," cookies might help us subtly highlight more beginner-friendly content on subsequent visits, even without knowing your identity. This enhances the relevance of the content you see, encouraging exploration and engagement even before you decide to create an account, making the initial browsing experience more tailored.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">75. Cookie Use for Load Testing</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        During periods of website load testing, cookies may be used to simulate user traffic and monitor system performance under stress. This helps our technical team identify potential bottlenecks and ensure the website can handle high volumes of users without crashing or slowing down. This is a technical use of cookies that is crucial for maintaining the stability and reliability of Bark & Blade, ensuring a consistent experience for all users.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">76. Cookie Use for Content Licensing Compliance</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For certain premium or licensed content, cookies may be used to track access and ensure compliance with licensing agreements. This helps us verify that only authorized users are accessing restricted content, protecting the intellectual property of our content creators and partners. This is a necessary measure to maintain the integrity of our content library and ensure fair usage, upholding the value of exclusive resources provided on Bark & Blade.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">77. Cookie Use for User Experience Surveys</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies can be utilized to manage the display of user experience surveys. For example, a cookie might ensure that a survey only appears after you've completed a specific action or visited a certain number of pages, or that you are not repeatedly prompted. This targeted approach helps us gather relevant feedback at optimal moments, improving the quality of insights we receive for website and service enhancements.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">78. Cookie Use for Browser Compatibility</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Some cookies help us understand your browser type and version. This information allows our development team to ensure that the Bark & Blade website functions optimally across various web browsers and devices. It helps us identify and resolve compatibility issues, providing a consistent and high-quality browsing experience regardless of the technology you use to access our platform.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">79. Cookie Use for Website Maintenance</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        During periods of website maintenance or updates, cookies may be used to redirect users to temporary pages or to ensure certain features are disabled. This helps manage the user experience during downtime and ensures that necessary updates can be performed smoothly. These are typically essential cookies that help maintain the operational integrity of the website during critical periods, minimizing disruption for users.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">80. Cookie Use for Internal Reporting</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies contribute to internal reporting and metrics. Aggregated cookie data provides our teams with insights into overall website performance, content popularity, and user engagement trends. This information is used for strategic planning, resource allocation, and continuous improvement of our services. This internal reporting is crucial for our operational efficiency and ensures that our efforts are aligned with our mission to serve the wood carving community effectively.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">81. Cookie Use for User Feedback Collection</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies can facilitate the collection of user feedback, for instance, by remembering if you have already provided feedback on a particular page or feature. This prevents repetitive prompts and ensures a smoother user experience. The data collected through these feedback mechanisms (often anonymized) helps us understand your opinions and suggestions, which are invaluable for refining our website and services based on direct user input.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">82. Cookie Use for Security Logging</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies can be associated with security logging to track user activity for auditing and security purposes. This helps us monitor for suspicious behavior, detect unauthorized access attempts, and investigate potential security incidents. While the logs themselves contain technical data, the cookies help link specific activities to a session, providing a critical audit trail for maintaining the security and integrity of our platform and protecting your account.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">83. Cookie Use for Content Filtering</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        In some cases, cookies might be used to remember your content filtering preferences, such as hiding certain categories of products or community posts. This allows for a more tailored browsing experience based on your explicit choices. These functionality cookies ensure that the content you see aligns with your preferences, making your interaction with Bark & Blade more relevant and enjoyable.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">84. Cookie Use for Device Recognition</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies, combined with other technical data, can help us recognize your device across different visits. This enables consistent personalization and security measures. For instance, if we recognize your device, we can offer a more streamlined login process or detect if an unfamiliar device is attempting to access your account. This enhances both convenience and security, providing a more robust and personalized experience.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">85. Cookie Use for Marketing Attribution</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies are vital for marketing attribution, helping us understand which marketing channels or campaigns led you to our website and ultimately to a conversion (e.g., a purchase or sign-up). This allows us to allocate our marketing budget effectively and optimize our strategies. This data is typically aggregated and anonymized, providing insights into the overall effectiveness of our marketing efforts without identifying individual users.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">86. Cookie Use for User Onboarding</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For new users, cookies can help track progress through onboarding flows, such as account setup steps or introductory tutorials. This ensures a smooth and guided entry into the Bark & Blade platform, preventing users from getting lost or repeating steps. These cookies enhance the initial user experience by providing a tailored and efficient onboarding process, helping new members quickly get acquainted with our services.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">87. Cookie Use for User Segmentation for Content Delivery</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies can be used to segment users based on their interests or past behavior to deliver specific content. For example, if you frequently browse "precision knives," cookies might place you in a segment that receives notifications about new knife arrivals. This allows for highly targeted content delivery, ensuring you receive information that is most relevant to your specific carving interests, enhancing your engagement with our platform.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">88. Cookie Use for Website Personalization (Logged-in Users)</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For logged-in users, cookies are crucial for deep personalization. They enable features like displaying your recent activity, recommending tools based on your project history, or showing community discussions relevant to your saved interests. This ensures that your Bark & Blade experience is highly tailored to your individual carving journey, making the platform feel like a personal workshop and community hub designed just for you.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">89. Cookie Use for Compliance Tracking</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies can be used for internal compliance tracking, ensuring that our website adheres to various legal and regulatory requirements. This might involve recording consent statuses, tracking user interactions with legal notices, or maintaining audit trails. This use of cookies is essential for Bark & Blade to demonstrate its adherence to data protection laws and maintain its integrity as a responsible online platform.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">90. Cookie Use for Troubleshooting</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        When you report an issue, cookies can help our technical support team troubleshoot by providing context about your session. They might store non-sensitive information about your interaction with the site leading up to the problem, which helps diagnose the root cause. This use of cookies is purely for technical support and improvement, allowing us to quickly resolve issues and enhance the reliability of our services.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">91. Cookie Use for User Interface Preferences</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies remember your preferences for the website's user interface, such as whether you prefer a grid or list view for products, or if you've collapsed certain sections of your dashboard. These small customizations enhance your personal browsing comfort and efficiency. These functionality cookies ensure that the website adapts to your preferred visual and interactive settings, providing a consistent and enjoyable user experience tailored to your individual choices.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">92. Cookie Use for Geotargeting Content</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies may be used for geotargeting, which involves delivering specific content or promotions based on your general geographical location (e.g., showing local workshop dates). This is typically done using your IP address to infer your region, and the cookie remembers this preference. This helps ensure that the information you receive is relevant to your area, enhancing the utility of the website without collecting precise location data.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">93. Cookie Use for User Activity Tracking</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies enable us to track user activity on our website, such as clicks, scrolls, and time spent on specific elements. This granular data, when aggregated and anonymized, provides deep insights into user engagement and interaction patterns. This information is invaluable for optimizing content placement, improving navigation, and enhancing the overall design and functionality of Bark & Blade, ensuring a highly responsive and intuitive user experience.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">94. Cookie Use for Cross-Site Functionality</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Some cookies facilitate cross-site functionality, particularly when integrating with third-party services like social media sharing or embedded videos. These cookies allow for seamless interaction between our website and external platforms, enabling features like sharing a tutorial directly to Facebook or playing a YouTube video within our page. While these enhance functionality, their use is governed by the third-party's policies and your consent.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">95. Cookie Use for Marketing Automation</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies play a role in our marketing automation efforts. By tracking your interactions, we can trigger automated communications (e.g., a reminder email about items left in your cart) or personalize future marketing messages. This is done with your consent for marketing cookies and aims to provide timely and relevant information, enhancing your engagement with Bark & Blade's offerings and events.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">96. Cookie Use for Customer Service Efficiency</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        When you interact with our customer service, cookies can help provide our support agents with context about your recent website activity. This allows them to understand your issue more quickly and provide more efficient assistance. This data is typically anonymized or used within secure support systems and helps streamline the customer service process, ensuring you receive prompt and informed help.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">97. Cookie Use for User Retention Analysis</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies are used in user retention analysis, helping us understand how often users return to our website and engage with our content over time. This data is aggregated and anonymized, providing insights into the long-term value and stickiness of our platform. This analysis is crucial for our growth strategy, allowing us to develop features and content that encourage continued engagement from our carving community.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">98. Cookie Use for Content Personalization (Demographic)</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you voluntarily provide demographic information (e.g., age range, skill level) during account registration or surveys, cookies can be used to remember these preferences. This allows Bark & Blade to personalize content recommendations or display features that are more relevant to your demographic profile. This enhances your experience by tailoring the platform to your specific background and needs within the wood carving community.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">99. Cookie Use for Website Security Features</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cookies contribute to various website security features beyond fraud detection. This might include cookies that help identify and block malicious bots, prevent brute-force attacks, or ensure the integrity of user sessions. These are essential security cookies that work in the background to protect our platform and your data from a wide range of cyber threats, ensuring a safe browsing environment.
+                    </p>
+                </div>
+
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md card-hover-effect">
+                    <h3 class="text-2xl font-semibold text-795548 mb-3">100. Cookie Use for Enhanced User Experience</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Ultimately, the comprehensive use of cookies across Bark & Blade is aimed at providing an enhanced user experience. From remembering your preferences to delivering personalized content and ensuring seamless navigation, cookies are fundamental to making your journey on our platform efficient, enjoyable, and tailored to your needs as a wood carver. We strive to balance functionality with privacy, ensuring that cookies serve to improve your experience while respecting your data choices.
+                    </p>
+                </div>
+
+            </div>
+            <p class="text-lg mt-12 text-center max-w-4xl mx-auto">
+                Thank you for taking the time to understand our Cookie Policy. We believe in being fully transparent about how we use cookies and similar technologies to enhance your Bark & Blade experience. Your privacy is paramount to us, and we are committed to using these tools responsibly and in compliance with all applicable data protection regulations. We are continuously working to improve our practices and ensure that your online journey with us is secure, personalized, and inspiring for your wood carving endeavors. Should you have any further questions or require additional clarification regarding our cookie usage, please do not hesitate to contact our dedicated Privacy Team using the information provided in the footer. Your feedback is always welcome as we strive to uphold our promise to you.
+            </p>
+            <p class="text-lg mt-4 text-center max-w-4xl mx-auto">
+                This Cookie Policy is a testament to our ongoing commitment to ethical data stewardship. We understand that the digital landscape is constantly evolving, and so too are the challenges and responsibilities associated with data privacy. Rest assured, Bark & Blade will remain vigilant in adapting its practices to meet these changes, always prioritizing your security and peace of mind. We are proud to be a platform where craftsmanship meets technology, and where your creative journey is supported by a foundation of trust and respect for your personal information. We look forward to continuing to serve you and the global wood carving community.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer - Same as other pages -->
+    <footer class="bg-333333 text-EFEBE9 py-8 px-6 md:px-12 rounded-t-xl mt-16">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div>
+                <h3 class="text-2xl font-bold text-795548 mb-4">Bark & Blade</h3>
+                <p class="text-lg mb-2">Crafted by Hand. Inspired by Nature.</p>
+                <p class="text-lg">Where Wood, Skill, and Artistry Unite.</p>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold text-795548 mb-4">Connect With Us</h3>
+                <p class="text-lg mb-2">Email: info@barkandblade.com</p>
+                <p class="text-lg mb-2">Phone: +1 (555) 123-4567</p>
+                <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                    <a href="#" class="text-EFEBE9 hover:text-4CAF50 transition duration-300">Facebook</a>
+                    <a href="#" class="text-EFEBE9 hover:text-4CAF50 transition duration-300">Instagram</a>
+                    <a href="#" class="text-EFEBE9 hover:text-4CAF50 transition duration-300">YouTube</a>
+                    <a href="#" class="text-EFEBE9 hover:text-4CAF50 transition duration-300">Pinterest</a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold text-795548 mb-4">Our Address</h3>
+                <address class="not-italic text-lg">
+                    Bark & Blade Headquarters<br>
+                    123 Woodcraft Lane<br>
+                    Artisan City, State 98765<br>
+                    Country
+                </address>
+            </div>
+        </div>
+        <div class="border-t border-B0BEC5 mt-8 pt-6 text-center text-sm text-gray-400">
+            &copy; 2025 Bark & Blade. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Dialogue Box -->
+    <div id="cookie-consent-dialogue" class="hidden">
+        <p class="text-base md:text-lg">
+            We use cookies to enhance your browsing experience, serve personalized content, and analyze our website traffic. By clicking "Accept All Cookies," you consent to our use of cookies. You can learn more about our cookie usage and manage your preferences by visiting our <a href="cookies.html" class="text-4CAF50 hover:underline font-semibold">Cookie Policy</a>.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center mt-4">
+            <button id="accept-cookies" class="btn-hover-effect">Accept All Cookies</button>
+            <button id="decline-cookies" class="btn-hover-effect">Decline Non-Essential</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieDialogue = document.getElementById('cookie-consent-dialogue');
+            const acceptButton = document.getElementById('accept-cookies');
+            const declineButton = document.getElementById('decline-cookies');
+
+            // Function to set a cookie
+            function setCookie(name, value, days) {
+                let expires = "";
+                if (days) {
+                    const date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax";
+            }
+
+            // Function to get a cookie
+            function getCookie(name) {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+
+            // Check if cookie consent has been given
+            const consentGiven = getCookie('bark_blade_cookie_consent');
+
+            if (!consentGiven) {
+                cookieDialogue.classList.remove('hidden');
+            }
+
+            acceptButton.addEventListener('click', function() {
+                setCookie('bark_blade_cookie_consent', 'accepted', 365); // Consent for 1 year
+                cookieDialogue.classList.add('hidden');
+                // Here you would typically load analytics/advertising scripts
+                console.log('Cookies accepted.');
+            });
+
+            declineButton.addEventListener('click', function() {
+                setCookie('bark_blade_cookie_consent', 'declined', 365); // Record decline for 1 year
+                cookieDialogue.classList.add('hidden');
+                // Here you would typically disable/block non-essential cookies
+                console.log('Non-essential cookies declined.');
+            });
+        });
+    </script>
+</body>
+</html>
